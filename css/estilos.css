@@ -1,0 +1,200 @@
+body{
+    margin: 0;
+    padding: 0%;
+}
+
+.fondo{
+
+    background: rgb(163, 114, 50); 
+    position: fixed;
+    margin: 0 auto;
+    padding: 0;
+    border: 0;
+    width: 100%;
+    height: 100%;
+    filter: blur(2px);
+    background-size: cover;
+    background-size: cover;
+    
+
+}
+
+.Contenido{
+
+    width: 70%;
+    margin: 0px auto;
+    display: grid;
+    position: relative;
+    border-radius: 18px;
+    background-color: wheat;
+    -moz-box-shadow: 0px 0px 25px #000000;
+    -webkit-box-shadow: 0px 0px 25px #000000;
+    box-shadow: 0px 0px 12px #000000;
+    font-family: 'Times New Roman', Times, serif;
+    
+}
+form{
+    width: 80%;
+    margin: 0 auto;
+}
+.cabecera{
+    font-size: 16px;
+    color: rgb(163, 114, 50);
+}
+.cabecera h1{
+    text-align: center;
+    font-size: xx-large;
+    
+}
+.cabecera input{
+    border-radius: 5px;
+    cursor: auto;
+    background-color: tan;
+    border-color: peachpuff;
+    color: rgb(85, 63, 33);
+    
+}
+.cabecera input:hover{
+    background-color: peachpuff;
+    border-color: tan;
+    color: rgb(163, 114, 50);
+}
+
+h3{
+    background-color: rgb(163, 114, 50);
+    border-radius: 10px;
+    border-color: peachpuff;
+    color: white;
+    font-variant: unset;
+    text-align: center;
+    width: auto;
+}
+
+.datosP{
+    font-size: 16px;
+    color: rgb(163, 114, 50);
+}
+
+.datosP #docE{
+    font-size: 10px;
+}
+
+.datosP input[type='radio']:after {
+    width: 12px;
+    height: 12px;
+    border-radius: 12px;
+    top: -2px;
+    left: -1px;
+    position: relative;
+    background-color: peachpuff;
+    content: '';
+    display: inline-block;
+    visibility: visible;
+    border: 2px solid tan;
+    cursor: pointer;
+    
+}
+
+.datosP input[type='radio']:checked:after {
+    width: 12px;
+    height: 12px;
+    border-radius: 12px;
+    top: -2px;
+    left: -1px;
+    position: relative;
+    background-color: rgb(163, 114, 50);
+    content: '';
+    display: inline-block;
+    visibility: visible;
+    border: 2px solid peachpuff;
+    cursor: default;
+}
+
+.datosP input[type='checkbox']:after {
+    width: 12px;
+    height: 12px;
+    top: -2px;
+    left: -1px;
+    position: relative;
+    background-color: peachpuff;
+    content: '';
+    display: inline-block;
+    visibility: visible;
+    border: 2px solid tan;
+    cursor: pointer;
+    
+}
+
+.datosP input[type='checkbox']:checked:after {
+    width: 12px;
+    height: 12px;
+    top: -2px;
+    left: -1px;
+    position: relative;
+    background-color: rgb(163, 114, 50);
+    content: '';
+    display: inline-block;
+    visibility: visible;
+    border: 2px solid peachpuff;
+    cursor: default;
+}
+
+.datosP input{
+    border-radius: 5px;
+    cursor: auto;
+    background-color: tan;
+    border-color: peachpuff;
+    color: rgb(85, 63, 33);
+}
+
+.datosP select{
+    border-radius: 5px;
+    cursor: auto;
+    background-color: tan;
+    
+}
+
+.datosP input:hover{
+    background-color: peachpuff;
+    border-color: tan;
+    color: rgb(163, 114, 50);
+}
+
+.datosP select:hover{
+    background-color: peachpuff;
+}
+
+.datosP thead{
+    background-color: tan;
+    border-color: peachpuff;
+    border: 5px;
+
+}
+.datosP table{
+    text-align: center;
+    border: 3px;
+    border-color: rgb(85, 63, 33);
+}
+
+#hijos{
+    width: 500px;
+}
+
+.boto{
+    
+    text-align: center;
+}
+.boto input{
+    background-color: peachpuff;
+    border-color: rgb(163, 114, 50);
+    border-radius: 10px;
+    cursor: pointer;
+    width: 120px auto;
+    height: 30px;
+    color: rgb(163, 114, 50);
+}
+.boto input:hover{
+    background-color: tan;
+    border-color: peachpuff;
+    color: rgb(85, 63, 33);
+}

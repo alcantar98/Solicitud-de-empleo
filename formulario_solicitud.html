@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solicitud de Empleo</title>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+
+<body>
+
+    <div class="fondo"></div>
+    <div class="Contenido">
+
+        <form name="form1" method="POST" action="Guardar.php">
+            <div class="cabecera">
+                <h1>Solicitud de Empleo</h1>
+                <label for="fechaS">Fecha de Solicitud:</label>&nbsp;&nbsp;
+                <input type="date" name="Fsolicitud" id="fechaS">&nbsp;&nbsp;
+                <label for="image">Foto Reciente:</label>&nbsp;&nbsp;
+                <input type="image" id="image" alt="Login" src="images/profile.png" width="60px"><br><br>
+                <label for="puesto">Puesto que solicita:</label> &nbsp;&nbsp;
+                <input type="text" id="puesto" name="PuestoDeseado" maxlength="200">&nbsp;
+                <label for="SueldoMD">Sueldo Deseado:</label>&nbsp;&nbsp;
+                <input type="number" name="SueldoDeseado" id="SueldoMD">&nbsp;<br><br>
+                <label for="SueldoMA">Sueldo Aprobado:</label>&nbsp;&nbsp;
+                <input type="number" name="SueldoAprobado" id="SueldoMA">&nbsp;
+                <label for="fechaC">Fecha de Contratación:</label>&nbsp;&nbsp;
+                <input type="date" name="Fcontrata" id="fechaC">&nbsp;&nbsp;
+
+            </div>
+            <br>
+            <div class="datosP">
+                <h3>DATOS PERSONALES</h3>
+                <label for="nombre">Nombre:</label> &nbsp;&nbsp;
+                <input type="text" height="30" id="nombre"  name="nombre" autofocus> &nbsp;&nbsp;
+                <label for="edad">Edad:</label> &nbsp;&nbsp;
+                <input type="number" min="0" max="120" id="edad" name="edad">&nbsp;&nbsp;
+                <label for="sex">Sexo:&nbsp;&nbsp;
+                    <input type="radio" name="sexo" value="Masculino"> Masculino
+                    <input type="radio" name="sexo" value="Femenino"> Femenino
+                </label><br><br>
+                <label for="direccion">Direccion:</label>&nbsp;&nbsp;
+                <input type="text" maxlength="150" name="direc" id="direccion">&nbsp;&nbsp;
+                <label for="col">Colonia:</label>&nbsp;&nbsp;
+                <input type="text" maxlength="150" name="colo" id="col"> <br> <br>
+                <label>Codigo Postal:</label>&nbsp;&nbsp;
+                <input type="text" name="codPos" maxlength="5">&nbsp;&nbsp;
+                <label>Estado:</label>&nbsp;&nbsp; <select name="Estado" id="Estados">
+                    <option value=""></option>
+                    <option value="Aguascalientes">Aguascalientes</option>
+                    <option value="BajaCalifornia">Baja Califonia</option>
+                    <option value="BajaCaliforniaSur">Baja California Sur</option>
+                    <option value="Campeche">Campeche</option>
+                    <option value="CiudadDMexico">Ciudad de Mexico</option>
+                    <option value="Chiapas">Chiapas</option>
+                    <option value="Chuihuahua">Chuihuahua</option>
+                    <option value="Cohauila">Cohauila</option>
+                    <option value="Colima">Colima</option>
+                    <option value="Durango">Durango</option>
+                    <option value="EstadoDMexico">Estado de Mexico</option>
+                    <option value="Guanajuato" onselect="Guanajuato">Guanajuato</option>
+                    <option value="Guerrero">Guerrero</option>
+                    <option value="Hidalgo">Hidalgo</option>
+                    <option value="Jalisco">Jalisco</option>
+                    <option value="Michoacan">Michoacan</option>
+                    <option value="Morelos">Morelos</option>
+                    <option value="Nayarit">Nayarit</option>
+                    <option value="NuevoLeon">Nuevo Leon</option>
+                    <option value="Oaxaca">Oaxaca</option>
+                    <option value="Puebla">Puebla</option>
+                    <option value="Queretaro">Queretaro</option>
+                    <option value="QuintanaRoo">Quintana Roo</option>
+                    <option value="SanLuisPotosi">San Luis Potosi</option>
+                    <option value="Sinaloa">Sinaloa</option>
+                    <option value="Sonora">Sonora</option>
+                    <option value="Tabasco">Tabasco</option>
+                    <option value="Tamaulipas">Tamaulipas</option>
+                    <option value="Tlaxcala">Tlaxcala</option>
+                    <option value="Veracruz">Veracruz</option>
+                    <option value="Yucatan">Yucatan</option>
+                    <option value="Zacatecas">Zacatecas</option>
+                </select>
+                <br><br>
+                <label for="mun">Municipio/Delegación:</label>&nbsp;&nbsp;
+                <input type="text" maxlength="150" id="mun" name="muni">
+                <label for="lug">Lugar de Nacimiento:</label>&nbsp;&nbsp;
+                <input type="text" maxlength="150" id="lug" name="lugarN"><br>
+                <br><br>
+                <label for="Nac">Nacionalidad:</label>&nbsp;&nbsp;
+                <input type="text" id="Nac" name="nacional" maxlength="150">&nbsp;&nbsp;
+                <label for="fechaNac">Fecha de Nacimiento:</label> &nbsp;&nbsp;
+                <input type="date" id="fechaNac" name="fechaNac"><br><br>
+                <label for="telefono">Telefono:</label> &nbsp;&nbsp;
+                <input type="tel" id="telefono" name="telef" min="0" max="10">
+                <label for="tCelu">Telefono Celular:</label>&nbsp;&nbsp;
+                <input type="tel" id="tCel" name="tCel" min="0" max="10"><br><br>
+                <label for="correo">Correo:</label>&nbsp;&nbsp;
+                <input type="email" name="correoE" id="correo">&nbsp;&nbsp;
+                <label for="peso">Peso:</label>&nbsp;&nbsp;
+                <input type="number" name="peso" id="peso" min="0" max="200">&nbsp;&nbsp;
+                <label for="esta">Estatura:</label>&nbsp;&nbsp;
+                <input type="number" name="estatura" id="esta" min="0" max="300"> <br><br>
+                <label for="viveC">Vive Con:&nbsp;&nbsp;&nbsp;&nbsp;
+                    <input type="radio" name="viveC" id="viveC" value="padres">Padres&nbsp;&nbsp;
+                    <input type="radio" name="viveC" id="viveC" value="familia">Familia&nbsp;&nbsp;
+                    <input type="radio" name="viveC" id="viveC" value="parientes">Parientes&nbsp;&nbsp;
+                    <input type="radio" name="viveC" id="viveC" value="solo">Solo
+                </label><br><br>
+                <label for="EsCivil">
+                    Estado Civil: &nbsp;&nbsp;&nbsp;&nbsp;
+                    <input type="radio" name="EsCivil" id="EsCivil" value="soltero">Soltero&nbsp;&nbsp;
+                    <input type="radio" name="EsCivil" id="EsCivil" value="casado">Casado&nbsp;&nbsp;
+                    <input type="radio" name="EsCivil" id="EsCivil" value="otro">Otro &nbsp;&nbsp;
+                    <input type="text" name="EsCivil" id="otroE">
+                </label><br><br>
+                <label>Personas que dependen de Usted:
+                    <input type="checkbox" name="PersDep" value="padres">Padres &nbsp;&nbsp;
+                    <input type="checkbox" name="PersDep" value="conyugue">Conyugue &nbsp;&nbsp;
+                    <input type="checkbox" name="PersDep" value="Hijos">Hijos &nbsp;&nbsp;
+                    <input type="checkbox" name="PersDep" value="otros">Otros
+
+                </label>
+
+                <h3>DOCUMENTACION</h3>
+                <label for="curp">Curp:</label>&nbsp;&nbsp;
+                <input type="text" name="curp" id="curp" minlength="17" maxlength="19">
+                <label for="Afore">Afore:</label>&nbsp;&nbsp;
+                <input type="text" name="afore" id="Afore">
+                <label for="rfc">RFC:</label>&nbsp;&nbsp;
+                <input type="text" name="RFC" id="rfc" minLength="10" maxlength="15"><br><br>
+                <label for="imss">No. IMSS:</label>&nbsp;&nbsp;
+                <input type="text" name="IMSS" id="imss" minlength="11" maxlength="13">&nbsp;&nbsp;
+                <label for="cartilla">No. Cartilla:</label>&nbsp;&nbsp;
+                <input type="text" name="cartilla" id="cartilla"><br><br>
+                <label for="pasaporte">No. Pasaporte:</label>&nbsp;&nbsp;
+                <input type="text" name="pasaporte" id="pasaporte">
+                <Label>
+                    Tiene licencia de manejo:
+                    <input type="radio" name="Man" id="Man" value="Si">Si
+                    <input type="radio" name="Man" id="Man"value="No">No
+                </Label><br><br>
+                <label for="noLic">No. y clase de Licencia:</label>&nbsp;&nbsp;
+                <input type="text" name="licn" id="licn"><br><br>
+                <label for="docm" id="docE">Siendo extranjero ¿Que documento le permite trabajar en el país?</label>
+                <input type="text" name="docuExtra" id="">
+                <h3>ESTADO DE SALUD Y HABITOS PERSONALES</h3>
+                <label for="estaSalud">¿Como considera su estado de salud actual?</label>&nbsp;&nbsp;
+                <label for="enferPad">¿Padece de alguna enfermedad?</label><br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="estaSalud"
+                    id="estaSalud">&nbsp;&nbsp;&nbsp;&nbsp;
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="enferPad"
+                    id="enferPad"><br><br>
+                <label for="depor">¿Practica Ud. algun deporte?</label>&nbsp;&nbsp;&nbsp;&nbsp;
+                <label for="club">¿Pertenece a algun club social?</label><br><br>
+                <input type="text" name="depor"
+                    id="depor">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <input type="text" name="club" id="club"><br><br>
+                <label for="">¿Cual es su pasatiempo favorito?</label>&nbsp;&nbsp;&nbsp;&nbsp;
+                <label for="">¿Cual es su meta en la vida?</label><br>
+                <input type="text" name="pasa"
+                    id="pasa">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <input type="text" name="meta" id="meta">
+                <h3>DATOS FAMILIARES</h3>
+                <table>
+                    <thead>
+                        <th>Nombre:</th>
+                        <th>Vive</th>
+                        <th>Finado</th>
+                        <th>Domicilio</th>
+                        <th>Ocupación</th>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <td>Padre: <input type="text" name="padreN" id=""></td>
+                            <td>
+                                <label for="pv">
+                                    <input type="radio" name="pv" id="pv" value="vive">
+                                </label>
+                            </td>
+                            <td>
+                                <label for="pv">
+                                    <input type="radio" name="pv" id="pv" value="finado">
+                                </label>
+                            </td>
+                            <td>
+                                <input type="text" name="domiP" id="domiP">
+                            </td>
+                            <td>
+                                <input type="text" name="ocup" id="ocup">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Madre: <input type="text" name="nomM" id="nomM"></td>
+                            <td>
+                                <label for="mv">
+                                    <input type="radio" name="mv" id="mv" value="vive">
+                                </label>
+                            </td>
+                            <td>
+                                <label for="mv">
+                                    <input type="radio" name="mv" id="mv" value="finado">
+                                </label>
+                            </td>
+                            <td>
+                                <input type="text" name="domM" id="domM">
+                            </td>
+                            <td>
+                                <input type="text" name="ocupM" id="ocupM">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Esposo(a): <input type="text" name="nomEs" id="NomEs"></td>
+                            <td>
+                                <label for="ev">
+                                    <input type="radio" name="ev" id="ev" value="vive">
+                                </label>
+                            </td>
+                            <td>
+                                <label for="ev">
+                                    <input type="radio" name="ev" id="ev" value="finado">
+                                </label>
+                            </td>
+                            <td>
+                                <input type="text" name="domE" id="domE">
+                            </td>
+                            <td>
+                                <input type="text" name="ocupE" id="ocupE">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="5">Nombre y edades de los hijos <input type="text" name="hijos" id="hijos"
+                                    maxlength="500"></td>
+                        </tr>
+                    </tbody>
+
+                </table>
+                <h3>ESCOLARIDAD</h3>
+                <table>
+                    <thead>
+                        <th>Nombre:</th>
+                        <th>Domicilio:</th>
+                        <th>De:</th>
+                        <th>A:</th>
+                        <th>Años:</th>
+                        <th>Titulo recibido:</th>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <td><label for="prim">Primaria:</label> <input type="text" name="prim" id="prim"></td>
+                            <td><input type="text" name="dirP" id="dirP"></td>
+                            <td><input type="number" name="dp" id="dp" min="0" max="3000"></td>
+                            <td><input type="number" name="ap" id="ap" min="0" max="3000"></td>
+                            <td><input type="number" name="anioP" id="anioP" min="0" max="10"></td>
+                            <td><input type="text" name="titP" id="titP"></td>
+                        </tr>
+                        <tr>
+                            <td>Secundaria: <input type="text" name="secu" id="prim"></td>
+                            <td><input type="text" name="dirS" id="dirS"></td>
+                            <td><input type="number" name="ds" id="dS" min="0" max="3000"></td>
+                            <td><input type="number" name="as" id="aS" min="0" max="3000"></td>
+                            <td><input type="number" name="anioS" id="anioS" min="0" max="10"></td>
+                            <td><input type="text" name="titS" id="titS"></td>
+                        </tr>
+                        <tr>
+                            <td>Preparatoria: <input type="text" name="prep" id="prim"></td>
+                            <td><input type="text" name="dirPr" id="dirPr"></td>
+                            <td><input type="number" name="dPr" id="dPr" min="0" max="3000"></td>
+                            <td><input type="number" name="aPr" id="aPr" min="0" max="3000"></td>
+                            <td><input type="number" name="anioPr" id="anioPr" min="0" max="10"></td>
+                            <td><input type="text" name="titPr" id="titPr"></td>
+                        </tr>
+                        <tr>
+                            <td>Profecional:<input type="text" name="profe" id="prim"></td>
+                            <td><input type="text" name="dirPo" id="dirPo"></td>
+                            <td><input type="number" name="dPo" id="dPo" min="0" max="3000"></td>
+                            <td><input type="number" name="aPo" id="aPo" min="0" max="3000"></td>
+                            <td><input type="number" name="anioPo" id="anioPo" min="0" max="10"></td>
+                            <td><input type="text" name="titPo" id="titPo"></td>
+                        </tr>
+                        <tr>
+                            <td>Comercial u otras:<input type="text" name="comer" id="prim"></td>
+                            <td><input type="text" name="dirO" id="dirO"></td>
+                            <td><input type="number" name="dO" id="dO" min="0" max="3000"></td>
+                            <td><input type="number" name="aO" id="aO" min="0" max="3000"></td>
+                            <td><input type="number" name="anioO" id="anioO" min="0" max="10"></td>
+                            <td><input type="text" name="titO" id="titO"></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                        </tr>
+                    </tbody>
+
+                </table><br>
+                <label>Estudios que esta efectuando en la actualidad:</label><br><br>
+                <label for="escA">Escuela:</label>&nbsp;&nbsp;
+                <input type="text" name="escA" id="escA">&nbsp;&nbsp;
+                <label for="hor">Horario</label>&nbsp;&nbsp;
+                <input type="time" name="hor" id="hor">&nbsp; A &nbsp;
+                <input type="time" name="horS" id="horS"><br><br>
+                <label for="carr">Curso o Carrera:</label>&nbsp;&nbsp;
+                <input type="text" name="carr" id="carr">&nbsp;&nbsp;
+                <label for="gra">Grado:</label>&nbsp;&nbsp;
+                <input type="text" name="gra" id="gra">
+
+                <br><br>
+            </div>
+            <div class="boto">
+                <input type="submit" value="Guardar" title="Click para enviar" class="submit">&nbsp;&nbsp;
+                <input type="reset" value="Limpiar">
+            </div>
+            <br>
+            <br>
+
+        </form>
+
+    </div>
+
+</body>
+
+</html>
